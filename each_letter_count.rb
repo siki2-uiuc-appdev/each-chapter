@@ -5,7 +5,12 @@
 
 p "Enter a word:"
 
-user_words = gets.chomp.split
+user_input = gets.chomp.split('')
 
-user_words.each do |word|
+
+user_input.each_with_index do |letter|
+  p "#{letter} appears #{user_input.count(letter)} times"
+end
+
+# l appears 1 times
   
